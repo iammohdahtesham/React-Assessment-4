@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   ImageBackground,
@@ -13,11 +14,13 @@ const Login = ({navigation}) => {
       <ImageBackground
         source={require('./background.png')}
         style={{flex: 1, justifyContent: 'center'}}>
-        <Text style={{fontSize: 30}}>you are inside screen 1</Text>
+        <Text style={{fontSize: 30, textAlign: 'center', marginVertical: 20}}>
+          You are inside screen 1
+        </Text>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate('Home')}>
-          <Text>lets get started</Text>
+          <Text>Lets get started</Text>
         </TouchableOpacity>
       </ImageBackground>
     </View>
