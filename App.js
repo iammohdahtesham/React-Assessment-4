@@ -1,7 +1,13 @@
 import React from 'react';
-import StackNav from './Src/Navigation';
+import StackNav from './Src/navigation/Navigation';
+import PropDrill from './Src/propDrill/PropDrilling';
 
 const App = () => {
-  return <StackNav />;
+  return (
+    <>
+      <StackNav />
+      {/* <PropDrill /> */}
+    </>
+  );
 };
 export default App;
